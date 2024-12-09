@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CreatePlataformaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_adir_plataforma"
+            android:fontFamily="sans-serif-medium"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:layout_gravity="center"
+            android:padding="30dp"/>
+
+        <TextView
+            android:id="@+id/textViewNombrePlataforma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre_de_la_plataforma"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <EditText
+            android:id="@+id/editTextPlataforma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:inputType="text"
+            android:hint="@string/plataforma"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:text="@string/url"/>
+
+        <EditText
+            android:id="@+id/editTextUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:inputType="text"
+            android:hint="@string/url_com"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <TextView
+            android:id="@+id/textViewUserPlat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre_de_usuario"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <EditText
+            android:id="@+id/editTextUserPlat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:inputType="text"
+            android:hint="@string/username"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <TextView
+            android:id="@+id/textViewPasswordPlat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contrase_a_acceso_a_la_plataforma"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <EditText
+            android:id="@+id/editTextPasswordPlat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:inputType="text"
+            android:hint="@string/contrase_a"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <ImageView
+            android:id="@+id/imageViewPlataforma"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:paddingVertical="20dp"
+            android:onClick="addImagePlat"
+            app:srcCompat="@drawable/image_icon"/>
+        <Button
+            android:id="@+id/buttonRegistrarPlataforma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/a_adir_plataforma"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/buttonCancelarPlataforma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cancelar"
+            android:layout_marginTop="10dp"/>
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

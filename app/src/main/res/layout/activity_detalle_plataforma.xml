@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".DetallePlataformaActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/buttonEditarPlat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@drawable/edit_icon"
+            android:background="#00000000"/>
+
+        <TextView
+            android:id="@+id/textViewPlataforma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/detalles_de_la_plataforma"
+            android:fontFamily="sans-serif-medium"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:gravity="center"
+            android:paddingVertical="20dp"/>
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre_de_la_plataforma"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <EditText
+            android:id="@+id/editTextNombrePlat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Netflix"
+            android:paddingVertical="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:focusable="false"
+            android:clickable="false"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/url"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:paddingVertical="20dp"/>
+
+        <EditText
+            android:id="@+id/editTextUrlPlat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="https://ejemplo.com"
+            android:paddingVertical="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:focusable="false"
+            android:clickable="false"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre_de_usuario"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:paddingVertical="20dp"/>
+
+        <EditText
+            android:id="@+id/editTextUsuarioPlat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="username"
+            android:paddingVertical="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:focusable="false"
+            android:clickable="false"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/layout_contrasena"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:paddingVertical="20dp"/>
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="******"
+            android:paddingVertical="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:focusable="false"
+            android:clickable="false"
+            android:background="@null"/>
+
+        <ImageView
+            android:id="@+id/imageViewPlataforma"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:paddingVertical="20dp"
+            app:srcCompat="@drawable/image_icon" />
+
+        <Button
+            android:id="@+id/buttonVerPelis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="verPeliculasPlataforma"
+            android:text="@string/ver_pel_culas"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/buttonVolverDetPlat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="volverDetPlat"
+            android:text="@string/volver_a_plataformas"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</ScrollView>

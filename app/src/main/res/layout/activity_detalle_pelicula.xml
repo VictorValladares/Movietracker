@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".DetallePeliculaActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/buttonEditarPel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@drawable/edit_icon"
+            android:background="#00000000" />
+
+        <TextView
+            android:id="@+id/textViewPelicula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:paddingVertical="20dp"
+            android:text="@string/detalles_de_la_pel_cula"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <TextView
+            android:id="@+id/textViewTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/t_tulo_de_la_pel_cula"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <EditText
+            android:id="@+id/editTextTituloPel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Superman"
+            android:paddingVertical="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:focusable="false"
+            android:clickable="false"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/textViewDuracion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/duraci_n"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:paddingVertical="20dp"/>
+
+        <EditText
+            android:id="@+id/editTextDuracionPel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="90 minutos"
+            android:paddingVertical="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:focusable="false"
+            android:clickable="false"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/textViewGenero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/g_nero"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:paddingVertical="20dp"/>
+
+        <EditText
+            android:id="@+id/editTextGeneroPel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acción"
+            android:paddingVertical="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:focusable="false"
+            android:clickable="false"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/textViewNP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/plataforma"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:paddingVertical="20dp"/>
+
+        <EditText
+            android:id="@+id/editTextNombrePlataforma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Netflix"
+            android:paddingVertical="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:focusable="false"
+            android:clickable="false"
+            android:background="@null"/>
+
+        <RatingBar
+            android:id="@+id/RatingBarCalificacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:isIndicator="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewPelicula"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:paddingVertical="20dp"
+            app:srcCompat="@drawable/image_icon" />
+
+        <Button
+            android:id="@+id/buttonVolverDetPel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="volverDetPel"
+            android:text="@string/volver_a_pel_culas"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+</ScrollView>

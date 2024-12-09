@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".CreatePeliculaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewTituloPelicula"
+            android:text="@string/a_adir_pel_cula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:layout_gravity="center"
+            android:padding="30dp"/>
+
+        <TextView
+            android:id="@+id/textViewNombrePelicula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre_de_la_pelicula"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <EditText
+            android:id="@+id/editTextTituloPelicula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:inputType="text"
+            android:hint="@string/pelicula"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:text="@string/duraci_n"/>
+
+        <EditText
+            android:id="@+id/editTextDuracion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:inputType="text"
+            android:hint="@string/duracion_min"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <TextView
+            android:id="@+id/textViewGenero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/g_nero"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <EditText
+            android:id="@+id/editTextGenero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:inputType="text"
+            android:hint="@string/g_nero"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <TextView
+            android:id="@+id/textViewCalificacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calificaci_n"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <RatingBar
+            android:id="@+id/ratingBarCalificacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="0.5" />
+
+        <TextView
+            android:id="@+id/textViewPlataforma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/plataforma"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <Spinner
+            android:id="@+id/spinnerPlataformas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewPelicula"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:paddingVertical="20dp"
+            android:onClick="addImagePeli"
+            app:srcCompat="@drawable/image_icon" />
+
+        <Button
+            android:id="@+id/buttonRegistrarPelicula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="registrarPlataforma"
+            android:text="@string/a_adir_pel_cula"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/buttonCancelarPelicula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cancelar"
+            android:layout_marginTop="10dp"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
